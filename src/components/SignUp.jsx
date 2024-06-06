@@ -22,7 +22,7 @@ function SignUp() {
       password: data.password,
     };
     await axios
-      .post("http://localhost:4000/user/signup", userInfo)
+      .post("https://bookstore-website-7p7s.onrender.com/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {

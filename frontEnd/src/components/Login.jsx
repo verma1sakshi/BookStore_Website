@@ -16,7 +16,8 @@ function Login() {
       email: data.email,
       password: data.password,
     };
-    await axios
+    // await axios
+    // ===
     .post("/", userInfo)
     .then((res) => {
       console.log(res.data);

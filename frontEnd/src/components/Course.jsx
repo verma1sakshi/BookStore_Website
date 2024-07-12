@@ -11,7 +11,7 @@ function Course() {
     const getBook=async()=>{
       try {
         // =====
-      const res=  await axios.get("/");
+      const res=  await axios.get("http://localhost:4000/book");
       console.log(res.data)
       setBook(res.data)
       } catch (error) {
